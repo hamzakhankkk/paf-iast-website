@@ -1,6 +1,8 @@
 :root {
-  --primary-color: #004d40; /* Deep Teal - representing the PAK/Austrian collaborative vibe */
-  --accent-color: #ffd700; /* Gold - for excellence and prestige */
+  --primary-color: #004d40;
+  /* Deep Teal - representing the PAK/Austrian collaborative vibe */
+  --accent-color: #ffd700;
+  /* Gold - for excellence and prestige */
   --secondary-color: #00796b;
   --bg-dark: #0a0a0a;
   --bg-light: #f4f4f4;
@@ -68,6 +70,12 @@ nav.scrolled {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 5px;
 }
 
 .logo-text {
@@ -200,7 +208,7 @@ section {
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .about-image img {
@@ -268,7 +276,8 @@ section {
   color: var(--text-muted);
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 8px;
@@ -278,7 +287,8 @@ section {
   transition: var(--transition);
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
   outline: none;
   border-color: var(--accent-color);
   background: rgba(255, 255, 255, 0.1);
@@ -321,14 +331,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .about-grid, .contact-container {
+
+  .about-grid,
+  .contact-container {
     grid-template-columns: 1fr;
   }
-  
+
   .nav-links {
     display: none;
   }
-  
+
   .hero-content h1 {
     font-size: 3rem;
   }
